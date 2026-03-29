@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-base: #0a0a0a;
+  --color-base-light: #111111;
+  --color-base-lighter: #1a1a1a;
+  --color-surface: #161616;
+  --color-surface-hover: #1e1e1e;
+  --color-border: #262626;
+  --color-border-light: #333333;
+  --color-teal: #5b9a8b;
+  --color-teal-light: #6fb3a2;
+  --color-teal-dark: #4a8275;
+  --color-teal-glow: rgba(91, 154, 139, 0.15);
+  --color-text: #e5e5e5;
+  --color-text-muted: #888888;
+  --color-text-dim: #555555;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-base);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fade-in animation for Alpine intersect */
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Grid background pattern */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(91, 154, 139, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(91, 154, 139, 0.03) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+/* Gradient glow effect */
+.glow-teal {
+  box-shadow: 0 0 60px rgba(91, 154, 139, 0.08), 0 0 120px rgba(91, 154, 139, 0.04);
+}

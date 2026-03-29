@@ -1,0 +1,259 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Privacy Policy — Obscribe | Encrypted Notebooks"
+  description="How Obscribe protects your data. Zero-knowledge architecture, no tracking, no analytics. Your notes are encrypted client-side."
+  canonicalUrl="https://obscribe.com/privacy/"
+  ogUrl="https://obscribe.com/privacy/"
+  ogTitle="Privacy Policy — Obscribe | Encrypted Notebooks"
+  ogDescription="How Obscribe protects your data. Zero-knowledge architecture, no tracking, no analytics. Your notes are encrypted client-side."
+>
+
+  <!-- ============ NAV ============ -->
+  <nav class="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-base/80 backdrop-blur-xl">
+    <div class="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2.5 group">
+        <div class="w-8 h-8 rounded-lg bg-teal/10 border border-teal/20 flex items-center justify-center group-hover:bg-teal/15 transition-colors">
+          <span class="text-teal font-extrabold text-sm">O</span>
+        </div>
+        <span class="text-text font-semibold text-lg tracking-tight">Obscribe</span>
+      </a>
+      <div class="flex items-center gap-6">
+        <a href="/#features" class="text-text-muted hover:text-text text-sm transition-colors hidden sm:block">Features</a>
+        <a href="/#pricing" class="text-text-muted hover:text-text text-sm transition-colors hidden sm:block">Pricing</a>
+        <a href="https://github.com/obscribe/obscribe" target="_blank" class="text-text-muted hover:text-text text-sm transition-colors hidden sm:block">GitHub</a>
+        <a href="#" class="bg-teal hover:bg-teal-light text-base font-medium text-sm px-4 py-2 rounded-lg transition-colors">
+          Get Started
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ CONTENT ============ -->
+  <main class="pt-32 pb-24">
+    <div class="mx-auto max-w-3xl px-6">
+
+      <div class="mb-12">
+        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-4">Privacy Policy</h1>
+        <p class="text-text-muted text-lg">Last updated: March 25, 2026</p>
+      </div>
+
+      <div class="space-y-12 text-text-muted leading-relaxed">
+
+        <!-- Intro -->
+        <section>
+          <p class="text-lg">
+            Obscribe is a privacy product. Our entire reason for existing is to keep your notes private. This policy explains what data we collect, what we don't, and why. We wrote it in plain English because you shouldn't need a law degree to understand how your data is handled.
+          </p>
+        </section>
+
+        <!-- The big deal -->
+        <section>
+          <h2 class="text-2xl font-bold text-text mb-4">The important part: your notes are encrypted client-side</h2>
+          <p class="mb-4">
+            Our zero-knowledge architecture means your note content is encrypted client-side before reaching our servers. We store only encrypted data and do not possess your encryption key. Here's what that means in practice:
+          </p>
+          <ul class="space-y-3 ml-1">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Your notes are encrypted with <span class="text-text">AES-256-GCM in your browser</span> before they ever reach our servers.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Your encryption key is <span class="text-text">derived from your password using PBKDF2</span> with 600,000 iterations and never leaves your device.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>What's stored on our servers is <span class="text-text">encrypted data (ciphertext)</span>. Even if someone accessed our database, your note content would be unreadable without your key.</span>
+            </li>
+          </ul>
+          <p class="mt-4">
+            We don't have the ability to read your notes. Our employees don't have the ability to read your notes. If law enforcement presented a subpoena, we could only provide encrypted data — we do not possess the decryption keys. Only you can decrypt your note content.
+          </p>
+          <p class="mt-4 text-sm">
+            <span class="text-text">Note:</span> Notebook names, page titles, and tags are <span class="text-text">not encrypted</span> — they are stored in plaintext to enable server-side search and organization features. Only note content is end-to-end encrypted.
+          </p>
+        </section>
+
+        <!-- Encryption details -->
+        <section>
+          <h2 class="text-2xl font-bold text-text mb-4">Encryption details</h2>
+          <p>
+            Obscribe uses <span class="text-text">AES-256-GCM</span> for content encryption, <span class="text-text">PBKDF2 with 600,000 iterations</span> for key derivation, and the <span class="text-text">Web Crypto API</span> for all cryptographic operations. All encryption and decryption occurs in your browser. Our encryption implementation is <a href="https://github.com/obscribe/obscribe" target="_blank" class="text-teal hover:text-teal-light transition-colors">open source</a> and available for review.
+          </p>
+        </section>
+
+        <!-- What we collect -->
+        <section>
+          <h2 class="text-2xl font-bold text-text mb-4">What we collect</h2>
+          <p class="mb-4">We collect the minimum needed to run the service:</p>
+          <ul class="space-y-3 ml-1">
+            <li class="flex items-start gap-3">
+              <span class="text-teal font-bold shrink-0">•</span>
+              <span><span class="text-text">Email address</span> — so you can log in and we can contact you about your account.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-teal font-bold shrink-0">•</span>
+              <span><span class="text-text">Name</span> — if you provide one. It's optional.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-teal font-bold shrink-0">•</span>
+              <span><span class="text-text">IP address</span> — temporarily, for security and rate limiting. We don't build profiles from this.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-teal font-bold shrink-0">•</span>
+              <span><span class="text-text">Payment information</span> — processed by Stripe. We never see or store your card number. Stripe handles all payment data under their own security standards.</span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- What we don't collect -->
+        <section>
+          <h2 class="text-2xl font-bold text-text mb-4">What we don't collect</h2>
+          <p class="mb-4">This is the list we're proud of:</p>
+          <ul class="space-y-3 ml-1">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+              <span><span class="text-text">Your note content</span> — encrypted client-side with AES-256-GCM. We store only ciphertext and do not possess your decryption key.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+              <span><span class="text-text">Search queries</span> — your searches stay on your device.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+              <span><span class="text-text">Usage analytics</span> — no tracking pixels, no session recordings, no heatmaps. We don't watch what you do.</span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Cookies -->
+        <section>
+          <h2 class="text-2xl font-bold text-text mb-4">Cookies</h2>
+          <p>
+            We use <span class="text-text">session cookies only</span> — the kind that keep you logged in. That's it. No tracking cookies. No third-party analytics cookies. No "this site uses cookies" banner because we're not doing anything shady with cookies.
+          </p>
+        </section>
+
+        <!-- Third parties -->
+        <section>
+          <h2 class="text-2xl font-bold text-text mb-4">Third parties</h2>
+          <p class="mb-4">Here's the complete list of third parties that handle any of your data:</p>
+          <ul class="space-y-3 ml-1">
+            <li class="flex items-start gap-3">
+              <span class="text-teal font-bold shrink-0">•</span>
+              <span><span class="text-text">Stripe</span> — payment processing. They handle your card info under their own strict security standards.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-teal font-bold shrink-0">•</span>
+              <span><span class="text-text">Hostinger</span> — email delivery for transactional emails (password resets, account notifications).</span>
+            </li>
+          </ul>
+          <p class="mt-4">
+            That's it. No Google Analytics. No Facebook pixel. No Mixpanel. No Amplitude. No Hotjar. Nothing. We don't sell your data because we barely collect any.
+          </p>
+        </section>
+
+        <!-- Data retention -->
+        <section>
+          <h2 class="text-2xl font-bold text-text mb-4">Data retention</h2>
+          <p class="mb-4">
+            We keep your data for as long as you have an account. When you delete your account, <span class="text-text">everything is purged</span>. Your encrypted notes, your account info, all of it. Gone. We don't keep backups of deleted accounts.
+          </p>
+          <p>
+            Delete means delete. Not "we'll keep it for 30 days just in case." Not "archived for legal compliance." Deleted.
+          </p>
+        </section>
+
+        <!-- GDPR -->
+        <section>
+          <h2 class="text-2xl font-bold text-text mb-4">Your rights (GDPR)</h2>
+          <p class="mb-4">If you're in the EU or EEA, you have the right to:</p>
+          <ul class="space-y-3 ml-1">
+            <li class="flex items-start gap-3">
+              <span class="text-teal font-bold shrink-0">•</span>
+              <span><span class="text-text">Access</span> your data — ask us and we'll tell you exactly what we have.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-teal font-bold shrink-0">•</span>
+              <span><span class="text-text">Export</span> your data — download everything associated with your account.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-teal font-bold shrink-0">•</span>
+              <span><span class="text-text">Delete</span> your data — nuke your account and everything in it.</span>
+            </li>
+          </ul>
+          <p class="mt-4">We support all of these. No runaround, no "please mail a notarized letter."</p>
+        </section>
+
+        <!-- CCPA -->
+        <section>
+          <h2 class="text-2xl font-bold text-text mb-4">California residents (CCPA)</h2>
+          <p>
+            If you're in California, you have the same rights as described above — access, export, and delete. We don't sell personal information to anyone. We don't share it for advertising. There's nothing to opt out of because we're not doing any of that.
+          </p>
+        </section>
+
+        <!-- Children -->
+        <section>
+          <h2 class="text-2xl font-bold text-text mb-4">Children</h2>
+          <p>
+            Obscribe is not intended for anyone under 13. We don't knowingly collect data from children. If you're a parent and believe your child has created an account, contact us and we'll delete it.
+          </p>
+        </section>
+
+        <!-- Changes -->
+        <section>
+          <h2 class="text-2xl font-bold text-text mb-4">Changes to this policy</h2>
+          <p>
+            If we change this privacy policy, we'll notify you by email before the changes take effect. We won't just quietly update the page and hope nobody notices.
+          </p>
+        </section>
+
+        <!-- Contact -->
+        <section>
+          <h2 class="text-2xl font-bold text-text mb-4">Contact</h2>
+          <p>
+            Questions about this policy? Email us at <a href="mailto:privacy@obscribe.com" class="text-teal hover:text-teal-light transition-colors">privacy@obscribe.com</a>.
+          </p>
+        </section>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="border-t border-border/50 py-12">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="border-t border-border/50 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-2.5">
+          <div class="w-6 h-6 rounded-md bg-teal/10 border border-teal/20 flex items-center justify-center">
+            <span class="text-teal font-extrabold text-[10px]">O</span>
+          </div>
+          <span class="text-text-dim text-sm">© 2026 Obscribe. Open source under AGPLv3.</span>
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="/" class="text-text-dim hover:text-text-muted text-sm transition-colors">Home</a>
+          <a href="/privacy" class="text-text-dim hover:text-text-muted text-sm transition-colors">Privacy</a>
+          <a href="/terms" class="text-text-dim hover:text-text-muted text-sm transition-colors">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</Layout>

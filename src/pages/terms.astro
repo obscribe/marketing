@@ -1,0 +1,241 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Terms of Service — Obscribe | Encrypted Notebooks"
+  description="Terms of service for Obscribe, the open-source encrypted notebook platform."
+  canonicalUrl="https://obscribe.com/terms/"
+  ogUrl="https://obscribe.com/terms/"
+  ogTitle="Terms of Service — Obscribe | Encrypted Notebooks"
+  ogDescription="Terms of service for Obscribe, the open-source encrypted notebook platform."
+>
+
+  <!-- ============ NAV ============ -->
+  <nav class="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-base/80 backdrop-blur-xl">
+    <div class="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2.5 group">
+        <div class="w-8 h-8 rounded-lg bg-teal/10 border border-teal/20 flex items-center justify-center group-hover:bg-teal/15 transition-colors">
+          <span class="text-teal font-extrabold text-sm">O</span>
+        </div>
+        <span class="text-text font-semibold text-lg tracking-tight">Obscribe</span>
+      </a>
+      <div class="flex items-center gap-6">
+        <a href="/#features" class="text-text-muted hover:text-text text-sm transition-colors hidden sm:block">Features</a>
+        <a href="/#pricing" class="text-text-muted hover:text-text text-sm transition-colors hidden sm:block">Pricing</a>
+        <a href="https://github.com/obscribe/obscribe" target="_blank" class="text-text-muted hover:text-text text-sm transition-colors hidden sm:block">GitHub</a>
+        <a href="#" class="bg-teal hover:bg-teal-light text-base font-medium text-sm px-4 py-2 rounded-lg transition-colors">
+          Get Started
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ CONTENT ============ -->
+  <main class="pt-32 pb-24">
+    <div class="mx-auto max-w-3xl px-6">
+
+      <div class="mb-12">
+        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-4">Terms of Service</h1>
+        <p class="text-text-muted text-lg">Last updated: March 25, 2026</p>
+      </div>
+
+      <div class="space-y-12 text-text-muted leading-relaxed">
+
+        <!-- Intro -->
+        <section>
+          <p class="text-lg">
+            These are the terms for using Obscribe. We've written them in plain English because we believe you should understand the rules without hiring a lawyer. By using Obscribe, you agree to these terms.
+          </p>
+        </section>
+
+        <!-- What Obscribe is -->
+        <section>
+          <h2 class="text-2xl font-bold text-text mb-4">What Obscribe is</h2>
+          <p>
+            Obscribe is an encrypted digital notebook platform. You write notes, we encrypt them on your device before they reach our servers, and nobody but you can read them. The code is open source under AGPLv3 and you're welcome to <a href="https://github.com/obscribe/obscribe" target="_blank" class="text-teal hover:text-teal-light transition-colors">self-host it</a>.
+          </p>
+        </section>
+
+        <!-- Your account -->
+        <section>
+          <h2 class="text-2xl font-bold text-text mb-4">Your account &amp; your keys</h2>
+          <p class="mb-4">This is the most important section. Please read it carefully.</p>
+          <div class="rounded-xl border border-teal/20 bg-teal/5 p-6 mb-4">
+            <p class="text-text font-medium mb-3">⚠️ You are responsible for your password and recovery key.</p>
+            <p>
+              Obscribe uses client-side encryption. If you lose both your password and recovery key, <span class="text-text">your encrypted data cannot be recovered by anyone, including Obscribe</span>. There is no "forgot password" backdoor. There is no support ticket that can fix this. Your encrypted data would be permanently unreadable.
+            </p>
+          </div>
+          <p>
+            Keep your recovery key safe. Write it down. Store it somewhere secure. We give it to you once during setup — treat it like the key to a safe, because that's exactly what it is.
+          </p>
+        </section>
+
+        <!-- Acceptable use -->
+        <section>
+          <h2 class="text-2xl font-bold text-text mb-4">Acceptable use</h2>
+          <p class="mb-4">
+            Because your content is encrypted client-side, we don't have the ability to see what you write. But we still have some basic rules:
+          </p>
+          <ul class="space-y-3 ml-1">
+            <li class="flex items-start gap-3">
+              <span class="text-teal font-bold shrink-0">•</span>
+              <span>Don't use Obscribe for anything illegal.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-teal font-bold shrink-0">•</span>
+              <span>Don't try to attack, overload, or exploit the service.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-teal font-bold shrink-0">•</span>
+              <span>Don't create accounts in bulk or use bots to abuse the free tier.</span>
+            </li>
+          </ul>
+          <p class="mt-4">
+            If we have reason to believe an account is being used to violate these terms, we reserve the right to terminate it.
+          </p>
+        </section>
+
+        <!-- Free tier -->
+        <section>
+          <h2 class="text-2xl font-bold text-text mb-4">Free tier</h2>
+          <p>
+            The free tier gives you <span class="text-text">1 notebook</span> and <span class="text-text">100 pages</span>. These limits may change over time, but we'll always have a free option. The encryption is the same on free and paid — we don't hold your privacy hostage behind a paywall.
+          </p>
+        </section>
+
+        <!-- Pro tier -->
+        <section>
+          <h2 class="text-2xl font-bold text-text mb-4">Pro tier</h2>
+          <p class="mb-4">
+            Pro costs $5/month or $48/year. Here's how billing works:
+          </p>
+          <ul class="space-y-3 ml-1">
+            <li class="flex items-start gap-3">
+              <span class="text-teal font-bold shrink-0">•</span>
+              <span>Payments are processed by <span class="text-text">Stripe</span>. We never see your card number.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-teal font-bold shrink-0">•</span>
+              <span>You can <span class="text-text">cancel anytime</span>. Your Pro features stay active until the end of your billing period.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-teal font-bold shrink-0">•</span>
+              <span>We don't offer refunds for partial months or partial years. If you cancel halfway through, you keep access for the remainder of what you paid for.</span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Uptime -->
+        <section>
+          <h2 class="text-2xl font-bold text-text mb-4">Uptime &amp; reliability</h2>
+          <p>
+            We aim for <span class="text-text">99.9% uptime</span>, but we don't guarantee it. Things break sometimes. We'll do our best to fix them quickly. There is no formal SLA, especially on the free tier. If uptime is critical for your use case, consider <a href="https://github.com/obscribe/obscribe" target="_blank" class="text-teal hover:text-teal-light transition-colors">self-hosting</a>.
+          </p>
+        </section>
+
+        <!-- Open source -->
+        <section>
+          <h2 class="text-2xl font-bold text-text mb-4">Open source</h2>
+          <p>
+            Obscribe's code is released under the <span class="text-text">GNU Affero General Public License v3 (AGPLv3)</span>. You can read, audit, fork, and self-host it. We encourage this. The license terms for the code are separate from these terms of service, which cover the hosted service at obscribe.com.
+          </p>
+        </section>
+
+        <!-- Termination -->
+        <section>
+          <h2 class="text-2xl font-bold text-text mb-4">Termination</h2>
+          <p class="mb-4">
+            <span class="text-text">You can delete your account at any time.</span> When you do, all your data is permanently erased. No 30-day grace period, no hidden backups.
+          </p>
+          <p class="mb-4">
+            We can terminate accounts that violate these terms. If we do, we'll tell you why (unless we're legally prevented from doing so).
+          </p>
+          <p>
+            <span class="text-text">Inactive accounts:</span> Free accounts that haven't been logged into for 12 months will receive a warning email. If there's no login within 30 days of that warning, the account and all its data will be permanently deleted. Paid (Pro) accounts are exempt from this policy as long as the subscription is active.
+          </p>
+        </section>
+
+        <!-- Security -->
+        <section>
+          <h2 class="text-2xl font-bold text-text mb-4">Security &amp; encryption</h2>
+          <p class="mb-4">
+            Obscribe provides encryption tools on a best-effort basis. While we implement industry-standard encryption (<span class="text-text">AES-256-GCM</span> for content, <span class="text-text">PBKDF2 with 600,000 iterations</span> for key derivation), no software can guarantee absolute security. We encourage users to <a href="https://github.com/obscribe/obscribe" target="_blank" class="text-teal hover:text-teal-light transition-colors">review our open-source code</a>.
+          </p>
+          <p>
+            <span class="text-text">Obscribe has not undergone a third-party security audit.</span> We plan to commission one as the project matures. In the meantime, our encryption implementation is fully open source and available for independent review.
+          </p>
+        </section>
+
+        <!-- Liability -->
+        <section>
+          <h2 class="text-2xl font-bold text-text mb-4">Limitation of liability</h2>
+          <p class="mb-4">
+            We build Obscribe with care, but we need to be upfront:
+          </p>
+          <ul class="space-y-3 ml-1">
+            <li class="flex items-start gap-3">
+              <span class="text-teal font-bold shrink-0">•</span>
+              <span>Obscribe is provided <span class="text-text">"as is"</span>. We don't guarantee it will always work perfectly.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-teal font-bold shrink-0">•</span>
+              <span>We are <span class="text-text">not liable for data loss</span> caused by lost passwords, lost recovery keys, or user error. This is a direct consequence of zero-knowledge encryption — we physically cannot help you recover encrypted data without your keys.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-teal font-bold shrink-0">•</span>
+              <span>Our total liability to you is limited to the amount you've paid us in the last 12 months.</span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Governing law -->
+        <section>
+          <h2 class="text-2xl font-bold text-text mb-4">Governing law</h2>
+          <p>
+            These terms are governed by the laws of the <span class="text-text">United States</span>. Any disputes will be resolved in accordance with applicable U.S. law.
+          </p>
+        </section>
+
+        <!-- Changes -->
+        <section>
+          <h2 class="text-2xl font-bold text-text mb-4">Changes to these terms</h2>
+          <p>
+            We may update these terms from time to time. If we make significant changes, we'll notify you by email before they take effect. Continued use of Obscribe after changes means you accept the new terms.
+          </p>
+        </section>
+
+        <!-- Contact -->
+        <section>
+          <h2 class="text-2xl font-bold text-text mb-4">Contact</h2>
+          <p>
+            Questions about these terms? Email us at <a href="mailto:privacy@obscribe.com" class="text-teal hover:text-teal-light transition-colors">privacy@obscribe.com</a>.
+          </p>
+        </section>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="border-t border-border/50 py-12">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="border-t border-border/50 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-2.5">
+          <div class="w-6 h-6 rounded-md bg-teal/10 border border-teal/20 flex items-center justify-center">
+            <span class="text-teal font-extrabold text-[10px]">O</span>
+          </div>
+          <span class="text-text-dim text-sm">© 2026 Obscribe. Open source under AGPLv3.</span>
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="/" class="text-text-dim hover:text-text-muted text-sm transition-colors">Home</a>
+          <a href="/privacy" class="text-text-dim hover:text-text-muted text-sm transition-colors">Privacy</a>
+          <a href="/terms" class="text-text-dim hover:text-text-muted text-sm transition-colors">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</Layout>

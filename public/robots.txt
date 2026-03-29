@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Sitemap: https://obscribe.com/sitemap.xml
+
+# Block app and API from crawlers
+User-agent: *
+Disallow: /api/

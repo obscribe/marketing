@@ -1,0 +1,65 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  keywords?: string;
+  canonicalUrl?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  ogImage?: string;
+  ogUrl?: string;
+}
+
+const {
+  title,
+  description = "Obscribe — encrypted digital notebooks. Zero-knowledge encryption, open source, self-hostable. Your notes stay yours.",
+  keywords = "encrypted notes, private notebook, zero knowledge encryption, end-to-end encrypted, open source notes, secure notes app, AES-256, self-hosted notes",
+  canonicalUrl = "https://obscribe.com/",
+  ogTitle = "Obscribe — End-to-End Encrypted Notebooks",
+  ogDescription = "Write privately. End-to-end encrypted notebooks powered by AES-256-GCM. Open source and self-hostable.",
+  ogImage = "https://obscribe.com/og-image.png",
+  ogUrl = "https://obscribe.com/",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta name="author" content="Obscribe" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={ogUrl} />
+    <meta property="og:title" content={ogTitle} />
+    <meta property="og:description" content={ogDescription} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content="Obscribe" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={ogTitle} />
+    <meta name="twitter:description" content={ogDescription} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <style>
+      @import "../styles/global.css";
+    </style>
+  </head>
+  <body class="min-h-screen bg-base text-text">
+    <slot />
+    <script>
+      import '../alpine.ts';
+    </script>
+  </body>
+</html>
